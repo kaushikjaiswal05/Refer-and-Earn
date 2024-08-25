@@ -1,0 +1,135 @@
+.top-bar {
+  background-color: #e3f2fd;
+  color: black;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.top-bar .contact-expert {
+  color: #1976d2;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.header {
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 45px;
+}
+
+.nav a {
+  margin: 0 15px;
+  color: #000;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+
+  &:hover {
+    color: #1976d2;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+  }
+}
+
+.nav .courses {
+  background-color: #1565c0;
+  padding: 7px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  margin-right: 350px;
+
+  &:hover {
+    background-color: #0b53aa;
+    color: #fff;
+  }
+}
+
+.nav .btn-login {
+  background-color: #f0f0f0;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+}
+
+.nav .btn-try-free {
+  background-color: #1565c0;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.nav .btn-try-free:hover {
+  background-color: #0b53aa;
+  color: #fff;
+}
+
+.tab-bar {
+  background-color: #ffffff;
+
+  div {
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 30px auto 0;
+    border-radius: 25px;
+    padding: 10px 60px;
+
+    a {
+      text-decoration: none;
+      color: rgb(61, 61, 61);
+
+      &:hover {
+        color: #1976d2;
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .nav a {
+    font-size: 10px;
+  }
+
+  .nav .courses {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+  }
+
+  .nav .btn-login {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+  }
+}
