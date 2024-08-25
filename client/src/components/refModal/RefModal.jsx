@@ -20,15 +20,29 @@ const RefModal = ({ open, handleClose }) => {
   const [refereeName, setRefereeName] = useState('');
   const [refereeEmail, setRefereeEmail] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  };
 
   const handleSubmit = async () => {
+    setError('');
+    setSuccess('');
+
     if (!referrerName || !referrerEmail || !refereeName || !refereeEmail) {
       setError('All fields are required.');
       return;
     }
 
+    if (!validateEmail(referrerEmail) || !validateEmail(refereeEmail)) {
+      setError('Please enter valid email addresses.');
+      return;
+    }
+
     try {
-      const response = await axios.post("http://localhost:5000/api/referrals", {
+      const response = await axios.post("https://refer-and-earn-5ing.onrender.com/api/referrals", {
         referrerName,
         referrerEmail,
         refereeName,
@@ -36,9 +50,16 @@ const RefModal = ({ open, handleClose }) => {
       });
 
       if (response.data.success) {
-        handleClose();
+        setSuccess('Referral submitted successfully!');
+        setReferrerName('');
+        setReferrerEmail('');
+        setRefereeName('');
+        setRefereeEmail('');
+        setTimeout(() => {
+          handleClose();
+        }, 2000);
       } else {
-        setError(response.data.message);
+        setError(response.data.message || 'An error occurred. Please try again.');
       }
     } catch (err) {
       setError('An error occurred. Please try again.');
@@ -78,6 +99,7 @@ const RefModal = ({ open, handleClose }) => {
           onChange={(e) => setRefereeEmail(e.target.value)}
         />
         {error && <p className="error">{error}</p>}
+        {success && <p className="success">{success}</p>}
         <Button variant="contained" color="primary" onClick={handleSubmit} sx={{ mt: 2 }}>
           Submit
         </Button>
