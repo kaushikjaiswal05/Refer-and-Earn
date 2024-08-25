@@ -25,10 +25,25 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
+  position: relative;
 }
 
 .logo {
   height: 45px;
+}
+
+.burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav a {
@@ -108,17 +123,39 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
+  .top-bar {
+   font-size: 0.rem;
+  }
+  .burger-menu {
+    display: block;
+    right: 20px;
   }
 
-  .logo {
-    height: 30px;
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+    button {
+      display: none;
+    }
+  }
+
+  .nav-open {
+    display: flex;
   }
 
   .nav a {
-    font-size: 10px;
+    margin: 10px 0;
+    font-size: 14px;
   }
 
   .nav .courses {
@@ -132,4 +169,29 @@
     margin-bottom: 10px;
     padding: 5px 10px;
   }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .tab-bar div {
+    max-width: 90%;
+    flex-direction: row;
+    padding: 6px;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 0.7rem;
+  }
+
+  .tab-bar div a {
+    margin: 10px 0;
+  }
 }
+

@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <div className="top-bar">
@@ -15,7 +21,10 @@ const Header = () => {
       <header className="header">
         <div className="container">
           <img src="/images/logo.png" alt="Logo" className="logo" />
-          <nav className="nav">
+          <button className="burger-menu" onClick={toggleMenu}>
+            &#9776;
+          </button>
+          <nav className={`nav ${menuOpen ? "nav-open" : ""}`}>
             <button className="courses">
               <a href="#" style={{ color: "white" }}>
                 Courses

@@ -114,7 +114,17 @@
 @media (max-width: 768px) {
   .footer-sections {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .footer-logo  {
+    justify-content: space-around;
+  }
+
+  .footer hr {
+    margin: 15px auto;
+    width: 75%;
   }
 
   .footer-section {
@@ -135,5 +145,10 @@
 
   .btn button {
     font-size: 0.5rem;
+    padding: 5px 10px;
+  }
+
+  .footer-follow {
+    margin: 25px 0;
   }
 }
