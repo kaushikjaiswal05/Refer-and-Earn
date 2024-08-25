@@ -124,11 +124,19 @@
 
 @media (max-width: 768px) {
   .top-bar {
-   font-size: 0.rem;
+    font-size: 0.5rem;
   }
+
   .burger-menu {
-    display: block;
+    display: flex;
+    position: absolute;
+    top: 10px;
     right: 20px;
+  }
+
+  .container .logo {
+    height: 30px;
+    display: flex;
   }
 
   .nav {
@@ -137,7 +145,7 @@
     width: 40%;
     background-color: #ffffff;
     position: absolute;
-    top: 50px;
+    top: 55px;
     right: 20px;
     padding: 10px;
     border-radius: 5px;
@@ -175,10 +183,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-  }
-
-  .logo {
-    height: 30px;
+    margin-bottom: -20px;
   }
 
   .tab-bar div {
@@ -194,4 +199,3 @@
     margin: 10px 0;
   }
 }
-

@@ -7,7 +7,7 @@ function Help() {
     <div className="help">
       <div className="banner">
         <div className="icon">
-          <HeadsetMicIcon style={{ fontSize: 45 }} />
+          <HeadsetMicIcon style={{ fontSize: 45, paddingRight: 5 }} />
         </div>
         <div className="text">
           <h2>Want to dvelve deeper into the program?</h2>
