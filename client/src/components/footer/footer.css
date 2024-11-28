@@ -1,0 +1,155 @@
+.footer {
+  background-color: #282828;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.footer .container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 20px;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 0.6rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-logo h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.footer-logo p {
+  margin: 0;
+  font-size: 0.4rem;
+  color: #ccc;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 60%;
+  margin: 10px;
+  margin-left: 290px;
+}
+
+.btn button {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.6rem;
+}
+
+.btn p {
+  margin: 0;
+  font-size: 0.5rem;
+  color: #ccc;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.footer-contact {
+  line-height: 0;
+}
+
+.footer-follow h3 {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-note {
+  text-align: center;
+  margin-top: 40px;
+  color: #ccc;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 800px) {
+  .footer-sections {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo  {
+    justify-content: space-around;
+  }
+
+  .footer hr {
+    margin: 15px auto;
+    width: 65%;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-logo h2 {
+    font-size: 0.8rem;
+  }
+
+  .footer-logo p {
+    font-size: 0.3rem;
+  }
+
+  .btn button {
+    font-size: 0.5rem;
+    padding: 5px 10px;
+  }
+
+  .footer-follow {
+    margin: 25px 0;
+  }
+}

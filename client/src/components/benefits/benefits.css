@@ -1,0 +1,145 @@
+.benefits-section {
+  background-color: #f4f7fb;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.benefits-section .highlight {
+  color: #1976d2;
+}
+
+.programs-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.programs-list {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  padding: 20px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-align: left;
+  border-radius: 20px;
+  color: rgb(54, 54, 54);
+  text-transform: uppercase;
+}
+
+.programs-list .programs-header {
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+.programs-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.programs-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.programs-list li:last-child {
+  border-bottom: none;
+}
+
+.benefits-table {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.benefits-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.benefits-table th,
+.benefits-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.benefits-table th {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.benefits-table tbody tr {
+  font-size: 0.7rem;
+}
+
+.benefits-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.btn-refer-now {
+  background-color: #1976d2;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-refer-now:hover {
+  background-color: #1565c0;
+}
+
+@media (max-width: 768px) {
+  .benefits-section {
+    padding: 40px 10px;
+  }
+
+  .benefits-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .programs-list,
+  .benefits-table {
+    width: 100%;
+  }
+
+  .programs-container {
+    flex-direction: column;
+  }
+}
