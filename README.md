@@ -29,3 +29,4 @@ This project consists of a Refer & Earn landing page built using the MERN stack.
 - Render
 
 ##Live Demo
+- https://67483798b9581463dfb27f54--accredian-project.netlify.app/
