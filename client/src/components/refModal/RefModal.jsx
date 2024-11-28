@@ -42,7 +42,7 @@ const RefModal = ({ open, handleClose }) => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/referrals", {
+      const response = await axios.post("https://refer-and-earn-db2g.onrender.com/api/referrals", {
         referrerName,
         referrerEmail,
         refereeName,
