@@ -96,3 +96,9 @@
     margin-top: -20px;
   }
 }
+
+@media (max-width: 450px) {
+  .hero-section>.container>img {
+    display: none;
+  }
+}
