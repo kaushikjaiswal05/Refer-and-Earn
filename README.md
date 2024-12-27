@@ -3,7 +3,7 @@
 
 ##Overview
 
-This project consists of a Refer & Earn landing page built using the MERN stack. The frontend is developed using React.js, and the backend is powered by Express.js, connecting to a MySQL database via Prisma ORM.
+This project consists of a Refer & Earn landing page built using the MERN stack. The frontend is developed using React.js, and the backend is powered by Node.js and Express.js, connecting to a MySQL database via Prisma ORM.
 
 
 ##Features
